@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project name="Shared Object Utility" default="clean" basedir=".">
+
+	<property name="bin-debug" value="${basedir}/bin-debug"/>
+	<property name="bin-release" value="${basedir}/bin-release"/>
+
+	<target name="clean">
+		<delete includeemptydirs="true">
+			<fileset dir="${bin-debug}">
+				<include name="**/*" />
+			</fileset>
+
+			<fileset dir="${bin-release}">
+				<include name="**/*" />
+			</fileset>
+		</delete>
+	</target>
+
+</project>
